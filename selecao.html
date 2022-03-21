@@ -1,0 +1,84 @@
+<html>
+	<head>
+		<title>Seleção</title>
+	</head>
+	<body>
+		<header><h1>Curso de HTML</h1></header>
+		<nav></nav>
+		<!--criação de campos de seleção -->
+		<section>
+		<fieldset><legend>Dados do cliente</legend>
+		<form method="post" action="recebe.php">
+			Nome: <input type="nome" name="name">
+			E-mail: <input type="email" name="email"><br>
+			
+			<br>E-mail: <input type="date" name="date">
+		</form>
+		</fieldset>
+		</section>
+		<br>
+		<section>
+		<!--criação do formurario de opção -->
+		<form method="post" action="?">
+			Qual aparelho voce possui?<br>
+			<!--checkbox- possibilita a escolha de varia sopções-->
+			<input type="checkbox" name="notebook" value="sim"checked> Notebook<br>
+			<input type="checkbox" name="tablet" value="sim"> Tablet<br>
+			<input type="checkbox" name="celular" value="sim"> Celular<br>
+			<br>
+			</section>
+			Voce prefere:<br>
+			<section>
+			<!--cradio- possibilita a escolha de uma sopções entre muitas---->
+			 <input type="radio" name="sistema" value="android" checked> Android <br>
+			 <input type="radio" name="sistema" value="ios"> IOs <br>
+			<br>
+			</section>
+			<section>Seu Carro Preferido<br>
+	<!--select- cria caixa com varias opções de ecolhas-->
+			<select name="sistema">
+			<option value="monza">Monza</option>
+			<option value="clio">Clio</option>
+			<option value="chevet">Chevete</option>
+			<option value="fusca">Fusca</option>
+			</select>
+			</section><br>
+			<br>
+			<!--select- cria caixa de lista com varias opções de ecolhas-->
+			<section>
+			Escolha qual seu veiculo atual<br>
+			<input list="cursos" name="curso">
+			<datalist id="cursos"> 
+			<option value="monza">
+			<option value="clio">
+			<option value="chevet">
+			<option value="fusca">
+			<br></section>
+			<!--criação de botão de para fazer uploard de arquivo-->
+			</form>
+			<br>
+			<!--opção post é necessario para uploard do arquivo-->
+			<form method="post" action="recebe.php" enctype="multipart/form-data">
+			<input type="file" name="arquivo">
+			</form>
+			<section>
+			
+			
+			</section>
+			
+			
+			
+			
+			
+			
+			
+		
+		
+		<footer></footer>
+	</body>
+</html>
+
+
+
+
+
